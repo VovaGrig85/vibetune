@@ -1,0 +1,16 @@
+# Файлы, которые прогон audit_prompt.md создаёт рядом с рабочей папкой —
+# личные данные конкретного человека, не часть репозитория ни при каких
+# обстоятельствах.
+/audit_discovery.json
+/audit_profile_input.json
+/workspace_audit_report.json
+/audit_share.json
+/audit_user_messages.txt
+/audit_state.jsonl
+/vibetune_payload.json
+/audit_report.md
+/audit_report_prev.md
+audit_report*.md
+
+__pycache__/
+*.pyc

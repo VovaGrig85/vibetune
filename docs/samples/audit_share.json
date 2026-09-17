@@ -1,0 +1,616 @@
+{
+  "meta": {
+    "schema_version": 10,
+    "metric_version": 12,
+    "metric_changes": "служебные строки лога не считаются шагами агента; без описания типов строк — шаги не измерены",
+    "tool_version": "3.10",
+    "generated_at": "2026-01-15T12:00:00+00:00",
+    "tz_offset_minutes": 420,
+    "install_id": "0123456789abcdef",
+    "run_seq": 1,
+    "prev_run_at": null,
+    "prev_metric_version": null,
+    "code_checksum": "baf86b71313a98237196a7fb51d9eddbbc2087bb738a83580b2803d5e072308c"
+  },
+  "environment": {
+    "harness": "Google Antigravity",
+    "harness_version": "2.12.2",
+    "harness_detected_by": "declared",
+    "harness_version_looks_exact": true,
+    "os_family": "windows",
+    "os_version": "10.0.26200",
+    "shell": "bash",
+    "python_version": "3.14.5",
+    "step_granularity_note": "одна строка лога — один блок разговора: рассуждения модели, вызовы инструментов и их результаты идут вместе, не отдельными строками",
+    "step_metrics_comparable_across_harnesses": false
+  },
+  "collection_health": {
+    "discovery_status": "partial",
+    "partial_reasons": [
+      "files_missing",
+      "human_declines_unmeasured",
+      "tool_attribution_approximate"
+    ],
+    "warnings": [
+      "low_information_axes",
+      "current_session_not_excluded"
+    ],
+    "schema_recognized": 1.0,
+    "unrecognized_fields": null,
+    "missing_field_map": [],
+    "unrecognized_statuses": [],
+    "flat_axes": [
+      "unrecognized_fields",
+      "tool_usage_global.human_declines"
+    ],
+    "dropped_records": {
+      "files_missing": 1,
+      "unrecognized_schema": 0,
+      "skipped_audit_marker": 1,
+      "current_session_excluded": 0,
+      "bad_json_lines": 6,
+      "bad_timestamp_events": 0
+    },
+    "prior_audit_runs_excluded": 1,
+    "role_plausibility": {
+      "ok": true,
+      "user_share": 0.031,
+      "reason": null
+    },
+    "log_span_days": 110,
+    "sessions_total": 110,
+    "episodes_total": 280,
+    "tool_attribution": {
+      "by_id": 0,
+      "by_adjacency": 147,
+      "by_same_row": 0,
+      "unresolved": 0,
+      "per_tool_counts_approximate": true
+    },
+    "user_messages_saved": true
+  },
+  "profile": {
+    "work_type": null,
+    "experience_months": null,
+    "team_size": null
+  },
+  "scanned_at": "2026-01-15T12:00:00+00:00",
+  "harness": {
+    "name": "Google Antigravity",
+    "version": "2.12.2",
+    "os": "windows",
+    "version_looks_exact": true,
+    "component_versions": {
+      "agentmemory": "0.9.27",
+      "codebase-memory-mcp": "0.9.0",
+      "chrome-devtools-plugin": "0.21.0",
+      "google-antigravity-sdk": "0.0.4",
+      "modern-web-guidance-plugin": "1.0.4"
+    }
+  },
+  "sessions_analyzed": 110,
+  "episodes_analyzed": 200,
+  "episodes_dropped_too_short": 80,
+  "episodes_kept_as_autonomous_loops": 20,
+  "brag_stats": {
+    "period_from": "2026-05-25",
+    "period_to": "2026-09-10",
+    "active_days": 65,
+    "longest_streak_days": 15,
+    "hours_with_agent": 150.0,
+    "tasks_completed": 200,
+    "messages_written": 1300,
+    "characters_typed": 394000,
+    "agent_actions_total": 19500,
+    "commands_run": 6500,
+    "code_edits_total": 3100,
+    "code_files_touched": 1200,
+    "languages_top": {
+      "*.py": 2000,
+      "*.html": 530,
+      "*.js": 330,
+      "*.css": 140,
+      "*.json": 40
+    },
+    "longest_task_min": 300.0,
+    "biggest_task_agent_steps": 1700,
+    "timezone": {
+      "utc_offset_hours": 7.0,
+      "source": "discovery"
+    },
+    "when_you_work": {
+      "peak_hour_local": 20,
+      "night_share_00_06": 0.05,
+      "late_share_after_22": 0.15,
+      "weekend_share": 0.3,
+      "busiest_day": "2026-06-12",
+      "busiest_day_messages": 95,
+      "messages_by_hour": {
+        "0": 40,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 2,
+        "10": 40,
+        "11": 55,
+        "12": 15,
+        "13": 100,
+        "14": 140,
+        "15": 55,
+        "16": 60,
+        "17": 80,
+        "18": 95,
+        "19": 140,
+        "20": 160,
+        "21": 130,
+        "22": 90,
+        "23": 130
+      }
+    }
+  },
+  "baseline_medians": {
+    "duration_min": {"p25": 8.0, "median": 25.0, "p75": 55.0, "max": 300.0},
+    "user_turns": {"p25": 2.0, "median": 4.0, "p75": 7.0, "max": 40.0},
+    "agent_steps": {"p25": 30.0, "median": 100.0, "p75": 220.0, "max": 1700.0},
+    "max_code_churn": {"p25": 1.0, "median": 2.0, "p75": 5.0, "max": 35.0},
+    "distinct_code_files": {"p25": 1.0, "median": 4.0, "p75": 10.0, "max": 90.0},
+    "steps_per_user_turn": {"p25": 12.0, "median": 30.0, "p75": 70.0, "max": 150.0},
+    "median_short_turns": 1.0,
+    "median_silent_recoveries": 0.0,
+    "median_visible_failures": 0.0
+  },
+  "baseline_medians_by_file_type": {
+    "*.py": {
+      "n_episodes": 120,
+      "insufficient_data": false,
+      "duration_min": {"p25": 8.0, "median": 22.0, "p75": 50.0, "max": 300.0},
+      "user_turns": {"p25": 2.0, "median": 4.0, "p75": 7.0, "max": 40.0},
+      "agent_steps": {"p25": 30.0, "median": 95.0, "p75": 200.0, "max": 1700.0},
+      "max_code_churn": {"p25": 1.0, "median": 2.0, "p75": 5.0, "max": 35.0},
+      "distinct_code_files": {"p25": 1.0, "median": 4.0, "p75": 12.0, "max": 90.0},
+      "steps_per_user_turn": {"p25": 12.0, "median": 28.0, "p75": 65.0, "max": 150.0},
+      "median_short_turns": 1.0,
+      "median_silent_recoveries": 0.0,
+      "median_visible_failures": 0.0
+    },
+    "*.html": {
+      "n_episodes": 60,
+      "insufficient_data": false,
+      "duration_min": {"p25": 10.0, "median": 30.0, "p75": 60.0, "max": 250.0},
+      "user_turns": {"p25": 3.0, "median": 5.0, "p75": 9.0, "max": 30.0},
+      "agent_steps": {"p25": 40.0, "median": 110.0, "p75": 250.0, "max": 1400.0},
+      "max_code_churn": {"p25": 2.0, "median": 4.0, "p75": 10.0, "max": 35.0},
+      "distinct_code_files": {"p25": 2.0, "median": 6.0, "p75": 15.0, "max": 70.0},
+      "steps_per_user_turn": {"p25": 15.0, "median": 32.0, "p75": 80.0, "max": 150.0},
+      "median_short_turns": 1.0,
+      "median_silent_recoveries": 0.0,
+      "median_visible_failures": 0.0
+    },
+    "*.json": {
+      "n_episodes": 2,
+      "insufficient_data": true
+    }
+  },
+  "baseline_medians_by_month": {
+    "months_found": 4,
+    "insufficient_data": false,
+    "by_month": {
+      "2026-05": {"n_episodes": 20, "insufficient_data": true},
+      "2026-06": {
+        "n_episodes": 70,
+        "insufficient_data": false,
+        "duration_min": {"p25": 8.0, "median": 24.0, "p75": 52.0, "max": 280.0},
+        "user_turns": {"p25": 2.0, "median": 4.0, "p75": 7.0, "max": 35.0},
+        "agent_steps": {"p25": 28.0, "median": 90.0, "p75": 200.0, "max": 1500.0},
+        "max_code_churn": {"p25": 1.0, "median": 2.0, "p75": 5.0, "max": 30.0},
+        "distinct_code_files": {"p25": 1.0, "median": 4.0, "p75": 10.0, "max": 80.0},
+        "steps_per_user_turn": {"p25": 11.0, "median": 28.0, "p75": 65.0, "max": 150.0},
+        "median_short_turns": 1.0,
+        "median_silent_recoveries": 0.0,
+        "median_visible_failures": 0.0
+      },
+      "2026-07": {
+        "n_episodes": 65,
+        "insufficient_data": false,
+        "duration_min": {"p25": 9.0, "median": 26.0, "p75": 58.0, "max": 300.0},
+        "user_turns": {"p25": 2.0, "median": 4.0, "p75": 8.0, "max": 40.0},
+        "agent_steps": {"p25": 32.0, "median": 105.0, "p75": 230.0, "max": 1700.0},
+        "max_code_churn": {"p25": 1.0, "median": 2.0, "p75": 5.0, "max": 35.0},
+        "distinct_code_files": {"p25": 1.0, "median": 4.0, "p75": 11.0, "max": 90.0},
+        "steps_per_user_turn": {"p25": 13.0, "median": 31.0, "p75": 72.0, "max": 150.0},
+        "median_short_turns": 1.0,
+        "median_silent_recoveries": 0.0,
+        "median_visible_failures": 0.0
+      },
+      "2026-08": {
+        "n_episodes": 45,
+        "insufficient_data": false,
+        "duration_min": {"p25": 7.0, "median": 23.0, "p75": 50.0, "max": 260.0},
+        "user_turns": {"p25": 2.0, "median": 4.0, "p75": 7.0, "max": 30.0},
+        "agent_steps": {"p25": 30.0, "median": 98.0, "p75": 210.0, "max": 1300.0},
+        "max_code_churn": {"p25": 1.0, "median": 2.0, "p75": 4.0, "max": 25.0},
+        "distinct_code_files": {"p25": 1.0, "median": 4.0, "p75": 9.0, "max": 60.0},
+        "steps_per_user_turn": {"p25": 12.0, "median": 29.0, "p75": 68.0, "max": 140.0},
+        "median_short_turns": 1.0,
+        "median_silent_recoveries": 0.0,
+        "median_visible_failures": 0.0
+      }
+    }
+  },
+  "file_type_distribution": {
+    "*.py": {"edits_share": 0.645, "episodes_share": 0.6},
+    "*.html": {"edits_share": 0.171, "episodes_share": 0.3},
+    "*.js": {"edits_share": 0.106, "episodes_share": 0.2},
+    "*.css": {"edits_share": 0.045, "episodes_share": 0.08},
+    "*.json": {"edits_share": 0.013, "episodes_share": 0.01}
+  },
+  "ranking": {
+    "axes_used": [
+      "max_code_churn",
+      "user_turns",
+      "short_turns",
+      "duration_min",
+      "visible_failures"
+    ],
+    "axes_excluded_as_constant": [],
+    "axes_low_information": {
+      "visible_failures": 1.0
+    },
+    "max_possible_score": 5
+  },
+  "capability_inventory": {
+    "native_tools": [
+      "view_file",
+      "write_to_file",
+      "replace_file_content",
+      "run_command",
+      "manage_task",
+      "schedule",
+      "ask_question",
+      "invoke_subagent",
+      "define_subagent",
+      "manage_subagents",
+      "send_message",
+      "generate_image",
+      "read_url_content",
+      "search_web",
+      "find_by_name",
+      "grep_search",
+      "list_dir",
+      "call_mcp_tool",
+      "list_resources",
+      "read_resource"
+    ],
+    "native_capabilities_claimed": [
+      "code_edit",
+      "terminal",
+      "code_search",
+      "web_search",
+      "image_gen",
+      "subagents",
+      "scheduling",
+      "mcp"
+    ],
+    "plugins_extensions": [
+      "chrome-devtools-plugin",
+      "google-antigravity-sdk",
+      "modern-web-guidance-plugin"
+    ],
+    "skills": [
+      "agy-customizations",
+      "antigravity_guide",
+      "generative_ui",
+      "migrate-workflows",
+      "permissioned-github"
+    ],
+    "memory_mechanisms": [
+      {
+        "name": "agentmemory",
+        "transport": "http",
+        "local": true,
+        "calls": 50
+      },
+      {
+        "name": "codebase-memory-mcp",
+        "transport": "stdio",
+        "local": true,
+        "calls": 15
+      },
+      {
+        "name": "graphiti",
+        "transport": "http",
+        "local": true,
+        "calls": 0
+      }
+    ],
+    "rules_files_count": 1
+  },
+  "mcp_inventory": {
+    "declared_servers": [
+      "agentmemory",
+      "codebase-memory-mcp",
+      "graphiti"
+    ],
+    "usage_breakdown": {
+      "agentmemory": 50,
+      "codebase-memory-mcp": 15,
+      "graphiti": 0
+    },
+    "dead_weight_servers": [
+      "graphiti"
+    ],
+    "unattributed_namespaces": [],
+    "dispatcher_calls_by_server": {
+      "agentmemory": 50,
+      "cmem-local": 15
+    },
+    "undeclared_servers_used": {}
+  },
+  "tool_usage_global": {
+    "run_command": {"calls": 6500, "failures": 12, "human_declines": 0},
+    "view_file": {"calls": 5800, "failures": 3, "human_declines": 0},
+    "replace_file_content": {"calls": 2000, "failures": 8, "human_declines": 0},
+    "write_to_file": {"calls": 1900, "failures": 5, "human_declines": 0},
+    "manage_task": {"calls": 1000, "failures": 0, "human_declines": 0},
+    "list_dir": {"calls": 730, "failures": 2, "human_declines": 0},
+    "grep_search": {"calls": 430, "failures": 89, "human_declines": 0},
+    "schedule": {"calls": 370, "failures": 0, "human_declines": 0},
+    "search_web": {"calls": 180, "failures": 1, "human_declines": 0},
+    "multi_replace_file_content": {"calls": 95, "failures": 2, "human_declines": 0},
+    "find_by_name": {"calls": 90, "failures": 0, "human_declines": 0},
+    "call_mcp_tool": {"calls": 65, "failures": 3, "human_declines": 0},
+    "list_permissions": {"calls": 35, "failures": 0, "human_declines": 0},
+    "ask_question": {"calls": 30, "failures": 0, "human_declines": 0},
+    "read_url_content": {"calls": 15, "failures": 1, "human_declines": 0},
+    "ask_permission": {"calls": 15, "failures": 0, "human_declines": 0},
+    "command_status": {"calls": 7, "failures": 0, "human_declines": 0},
+    "send_message": {"calls": 6, "failures": 0, "human_declines": 0},
+    "invoke_subagent": {"calls": 4, "failures": 0, "human_declines": 0},
+    "manage_subagents": {"calls": 4, "failures": 0, "human_declines": 0},
+    "invoke_subagents": {"calls": 1, "failures": 0, "human_declines": 0},
+    "define_subagent": {"calls": 1, "failures": 0, "human_declines": 0}
+  },
+  "silent_workarounds": {
+    "total": 92,
+    "tool_failures_total": 126,
+    "wordless_total": 68,
+    "longest_chain_calls": 3,
+    "longest_chain_duration_min": 1.3,
+    "median_chain_calls": 2.0,
+    "top_pairs": [
+      {"from_tool": "grep_search", "to_tool": "view_file", "count": 32},
+      {"from_tool": "grep_search", "to_tool": "run_command", "count": 21},
+      {"from_tool": "grep_search", "to_tool": "list_dir", "count": 15},
+      {"from_tool": "grep_search", "to_tool": "write_to_file", "count": 9},
+      {"from_tool": "list_dir", "to_tool": "list_permissions", "count": 8}
+    ]
+  },
+  "invisible_inefficiency": {
+    "episodes_selected": 45,
+    "top": [
+      {
+        "steps_per_user_turn": 150.0,
+        "agent_steps": 1700,
+        "user_turns": 15,
+        "duration_min": 150.0,
+        "silent_recoveries": 0,
+        "max_code_churn": 20,
+        "total_code_edits": 100,
+        "distinct_code_files": 55,
+        "file_type": "*.py",
+        "top_tools": {
+          "view_file": 470,
+          "run_command": 170,
+          "write_to_file": 55,
+          "replace_file_content": 55,
+          "grep_search": 40
+        }
+      },
+      {
+        "steps_per_user_turn": 150.0,
+        "agent_steps": 1400,
+        "user_turns": 9,
+        "duration_min": 150.0,
+        "silent_recoveries": 0,
+        "max_code_churn": 20,
+        "total_code_edits": 85,
+        "distinct_code_files": 25,
+        "file_type": "*.html",
+        "top_tools": {
+          "view_file": 220,
+          "manage_task": 120,
+          "run_command": 100,
+          "replace_file_content": 85,
+          "grep_search": 55
+        }
+      },
+      {
+        "steps_per_user_turn": 95.0,
+        "agent_steps": 1100,
+        "user_turns": 10,
+        "duration_min": 100.0,
+        "silent_recoveries": 6,
+        "max_code_churn": 9,
+        "total_code_edits": 65,
+        "distinct_code_files": 30,
+        "file_type": "*.py",
+        "top_tools": {
+          "run_command": 130,
+          "view_file": 120,
+          "list_dir": 65,
+          "manage_task": 45,
+          "replace_file_content": 40
+        }
+      },
+      {
+        "steps_per_user_turn": 150.0,
+        "agent_steps": 1000,
+        "user_turns": 6,
+        "duration_min": 70.0,
+        "silent_recoveries": 0,
+        "max_code_churn": 20,
+        "total_code_edits": 60,
+        "distinct_code_files": 25,
+        "file_type": "*.py",
+        "top_tools": {
+          "view_file": 290,
+          "run_command": 80,
+          "replace_file_content": 60,
+          "grep_search": 50,
+          "write_to_file": 15
+        }
+      },
+      {
+        "steps_per_user_turn": 95.0,
+        "agent_steps": 960,
+        "user_turns": 10,
+        "duration_min": 150.0,
+        "silent_recoveries": 0,
+        "max_code_churn": 2,
+        "total_code_edits": 95,
+        "distinct_code_files": 90,
+        "file_type": "*.py",
+        "top_tools": {
+          "run_command": 130,
+          "write_to_file": 95,
+          "view_file": 80,
+          "schedule": 50,
+          "manage_task": 35
+        }
+      }
+    ]
+  },
+  "top_anomalies": [
+    {
+      "duration_min": 150.0,
+      "user_turns": 30,
+      "agent_steps": 810,
+      "short_turns": 10,
+      "max_code_churn": 35,
+      "total_code_edits": 65,
+      "distinct_code_files": 5,
+      "max_scratchpad_churn": 2,
+      "file_type": "*.html",
+      "silent_recoveries": 0,
+      "visible_failures": 0,
+      "top_tools": {
+        "view_file": 240,
+        "replace_file_content": 65,
+        "run_command": 60,
+        "find_by_name": 10,
+        "write_to_file": 5
+      },
+      "anomaly_score": 5.0
+    },
+    {
+      "duration_min": 250.0,
+      "user_turns": 20,
+      "agent_steps": 690,
+      "short_turns": 5,
+      "max_code_churn": 15,
+      "total_code_edits": 50,
+      "distinct_code_files": 10,
+      "max_scratchpad_churn": 10,
+      "file_type": "*.js",
+      "silent_recoveries": 4,
+      "visible_failures": 0,
+      "top_tools": {
+        "view_file": 130,
+        "run_command": 70,
+        "replace_file_content": 55,
+        "list_dir": 25,
+        "write_to_file": 20
+      },
+      "anomaly_score": 5.0
+    },
+    {
+      "duration_min": 100.0,
+      "user_turns": 25,
+      "agent_steps": 110,
+      "short_turns": 6,
+      "max_code_churn": 20,
+      "total_code_edits": 30,
+      "distinct_code_files": 3,
+      "max_scratchpad_churn": 7,
+      "file_type": "*.js",
+      "silent_recoveries": 0,
+      "visible_failures": 0,
+      "top_tools": {
+        "replace_file_content": 30,
+        "write_to_file": 10
+      },
+      "anomaly_score": 5.0
+    },
+    {
+      "duration_min": 150.0,
+      "user_turns": 40,
+      "agent_steps": 660,
+      "short_turns": 10,
+      "max_code_churn": 7,
+      "total_code_edits": 25,
+      "distinct_code_files": 10,
+      "max_scratchpad_churn": 7,
+      "file_type": "*.json",
+      "silent_recoveries": 9,
+      "visible_failures": 1,
+      "top_tools": {
+        "run_command": 120,
+        "view_file": 45,
+        "manage_task": 35,
+        "write_to_file": 25,
+        "search_web": 25
+      },
+      "anomaly_score": 5.0
+    },
+    {
+      "duration_min": 150.0,
+      "user_turns": 20,
+      "agent_steps": 840,
+      "short_turns": 4,
+      "max_code_churn": 35,
+      "total_code_edits": 120,
+      "distinct_code_files": 70,
+      "max_scratchpad_churn": 5,
+      "file_type": "*.html",
+      "silent_recoveries": 4,
+      "visible_failures": 0,
+      "top_tools": {
+        "run_command": 150,
+        "view_file": 100,
+        "write_to_file": 75,
+        "replace_file_content": 55,
+        "list_dir": 10
+      },
+      "anomaly_score": 5.0
+    }
+  ],
+  "diagnostics": {
+    "files_listed": 110,
+    "files_read": 110,
+    "files_missing": 1,
+    "unrecognized_schema": 0,
+    "skipped_audit_marker": 1,
+    "current_session_excluded": 0,
+    "bad_json_lines": 6,
+    "bad_timestamp_events": 0,
+    "ambiguous_error_values": 0,
+    "events_with_file_path": 4000,
+    "events_total": 43000,
+    "result_row_events": 19500,
+    "user_turns_total": 1300,
+    "short_user_turns_total": 390,
+    "lines_total": 43000,
+    "recognized_total": 43000,
+    "unresolved_tool_failures": 0,
+    "service_lines_excluded": 0,
+    "episode_id_conflicts": 0,
+    "missing_field_map": []
+  },
+  "recommendation_codes": ["ENV_PATH_ISSUE", "TOOL_NOT_FIRING", "LOW_ACTIVITY_UNCLEAR"],
+  "agent_recommended_tools": ["ripgrep"]
+}
