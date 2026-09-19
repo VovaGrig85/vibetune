@@ -1,16 +1,19 @@
 # Файлы, которые прогон audit_prompt.md создаёт рядом с рабочей папкой —
 # личные данные конкретного человека, не часть репозитория ни при каких
-# обстоятельствах.
-/audit_discovery.json
-/audit_profile_input.json
-/workspace_audit_report.json
-/audit_share.json
-/audit_user_messages.txt
-/audit_state.jsonl
-/vibetune_payload.json
-/audit_report.md
-/audit_report_prev.md
+# обстоятельствах. Правила без ведущего слэша действуют в любой папке
+# репозитория: промт можно запустить и в подпапке клона.
+audit_discovery.json
+audit_profile_input.json
+workspace_audit_report.json
+audit_share.json
+audit_user_messages.txt
+audit_state.jsonl
+vibetune_payload.json
 audit_report*.md
+
+# Образец обезличенного отчёта — часть репозитория, единственное исключение
+# из правила про audit_share.json выше.
+!docs/samples/audit_share.json
 
 __pycache__/
 *.pyc
